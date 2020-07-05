@@ -1,0 +1,25 @@
+server:
+  port: 8877
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: 'shopping-manager-ms'
+  datasource:
+    username: root
+    password: root
+    url: 'jdbc:mysql://localhost:3307/pinyougoudb?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai'
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+
+
+  

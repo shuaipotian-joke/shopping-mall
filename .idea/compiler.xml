@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shopping-zuul" />
+        <module name="shopping-eurekaserver" />
+        <module name="shopping-manager-ms" />
+        <module name="shopping-auth-ms" />
+        <module name="shopping-mapper" />
+        <module name="shopping-pojo" />
+        <module name="shopping-page-ms" />
+        <module name="shopping-common" />
+        <module name="shopping-search-ms" />
+        <module name="shopping-content-ms" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shopping-auth-ms" options="-parameters" />
+      <module name="shopping-common" options="-parameters" />
+      <module name="shopping-content-ms" options="-parameters" />
+      <module name="shopping-eurekaserver" options="-parameters" />
+      <module name="shopping-manager-ms" options="-parameters" />
+      <module name="shopping-mapper" options="-parameters" />
+      <module name="shopping-page-ms" options="-parameters" />
+      <module name="shopping-pojo" options="-parameters" />
+      <module name="shopping-search-ms" options="-parameters" />
+      <module name="shopping-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

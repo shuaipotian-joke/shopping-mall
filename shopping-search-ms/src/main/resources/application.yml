@@ -1,0 +1,23 @@
+server:
+  port: 8855
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  data:
+    solr:
+      host: http://127.0.0.1:8080/solr
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: elasticsearch
+  application:
+    name: 'shopping-search-ms'
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
